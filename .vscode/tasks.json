@@ -4,6 +4,19 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "black-pill-debug-deps",
+      "type": "shell",
+      "command": "make -f black-pill.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
       "label": "blue-f030-debug-deps",
       "type": "shell",
       "command": "make -f blue-f030.mk debug-deps",

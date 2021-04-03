@@ -1,6 +1,25 @@
 {
   "configurations": [
     {
+      "name": "black-pill",
+      "defines": [
+        "STM32F401xE"
+      ],
+      "includePath": [
+        "${workspaceFolder}/lib/stm32cube/CMSIS/ARM/inc",
+        "${workspaceFolder}/lib/stm32cube/CMSIS/STM32F4xx/inc",
+        "${workspaceFolder}/lib/stm32cube/HAL/STM32F4xx/inc",
+        "${workspaceFolder}/lib/tiny/include",
+        "${workspaceFolder}/lib/tiny/src",
+        "${workspaceFolder}/src/target/black-pill",
+        "${workspaceFolder}/src/peripheral/cmsis",
+        "${workspaceFolder}/src/peripheral/stm32xxxx"
+      ],
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+    {
       "name": "blue-f030",
       "defines": [
         "STM32F030x6",

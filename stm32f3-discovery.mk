@@ -4,6 +4,7 @@ BUILD_DIR ?= ./build/$(TARGET)
 CPU := cortex-m4
 ARCH := armv7e-m
 LINKER_CFG := ld/$(TARGET).ld
+SVD := svd/stm32f303.svd
 
 DEBUG_ADAPTER ?= openocd
 OPENOCD_CFG_DIR := openocd/$(TARGET)

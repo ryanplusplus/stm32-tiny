@@ -4,8 +4,9 @@ BUILD_DIR ?= ./build/$(TARGET)
 CPU := cortex-m0
 ARCH := armv6-m
 LINKER_CFG := ld/$(TARGET).ld
+SVD := svd/stm32f0x0.svd
 
-DEBUG_ADAPTER ?= openocd
+DEBUG_ADAPTER ?= other
 OPENOCD_CFG_DIR := openocd/$(TARGET)
 BLACK_MAGIC_PORT ?= /dev/ttyACM0
 BLACK_MAGIC_POWER_TARGET ?= N

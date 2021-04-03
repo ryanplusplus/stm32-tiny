@@ -2,6 +2,9 @@
 Sample project using [`tiny`](https://github.com/ryanplusplus/tiny) with STM32.
 
 ## Hardware
+### Black Pill
+https://stm32-base.org/boards/STM32F401CEU6-WeAct-Black-Pill-V3.0
+
 ### Blue F030
 https://stm32-base.org/boards/STM32F030F4P6-STM32F030-DEMO-BOARD-V1.1
 
@@ -27,7 +30,7 @@ Note that on Linux `./scripts/stlink-quirks` must be run prior to connection to 
 
 ## Setup
 - Install `gcc-arm-none-eabi`
-- Install [`openocd`](https://sourceforge.net/p/openocd/code/ci/master/tree/) (build `master`from source for STM32G0 support)
+- Install [`openocd`](https://sourceforge.net/p/openocd/code/ci/master/tree/) (install `v0.11.0` or later for STM32G0 support)
 
 ## Use
 ### Compile
@@ -56,6 +59,7 @@ make -f <target>.mk upload
 - [STM32F100 Reference Manual](https://www.st.com/resource/en/reference_manual/cd00246267.pdf)
 - [STM32F103 Reference Manual](https://www.st.com/resource/en/reference_manual/cd00171190.pdf)
 - [STM32F3 Reference Manual](https://www.st.com/resource/en/reference_manual/dm00043574.pdf)
+- [STM32F401xC Reference Manual](https://www.st.com/resource/en/reference_manual/dm00096844.pdf)
 - [STM32G0x0 Reference Manual](https://www.st.com/resource/en/reference_manual/dm00463896.pdf)
 - [STM32G0x1 Reference Manual](https://www.st.com/resource/en/reference_manual/dm00371828.pdf)
 
@@ -64,6 +68,7 @@ make -f <target>.mk upload
 - [STM32F100RB Datasheet](https://www.st.com/resource/en/datasheet/stm32f100rb.pdf)
 - [STM32F103C8 Datasheet](https://www.st.com/resource/en/datasheet/stm32f103c8.pdf)
 - [STM32F303VC Datasheet](https://www.st.com/resource/en/datasheet/stm32f303vc.pdf)
+- [STM32F401CE Datasheet](https://www.st.com/resource/en/datasheet/stm32f401ce.pdf)
 - [STM32G031K8 Datasheet](https://www.st.com/resource/en/datasheet/stm32g031k8.pdf)
 - [STM32G070RB Datasheet](https://www.st.com/resource/en/datasheet/stm32g070rb.pdf)
 

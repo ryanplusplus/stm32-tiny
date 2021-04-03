@@ -5,13 +5,26 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "black-pill",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/black-pill/black-pill.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "svdFile": "${workspaceFolder}/build/black-pill/black-pill.svd",
+      "configFiles": [
+        "${workspaceRoot}/build/black-pill/openocd.cfg"
+      ],
+      "preLaunchTask": "black-pill-debug-deps"
+    },
+    {
       "name": "blue-f030",
       "cwd": "${workspaceRoot}",
       "executable": "${workspaceFolder}/build/blue-f030/blue-f030.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
-      "svdFile": "${workspaceFolder}/svd/stm32f0x0.svd",
+      "svdFile": "${workspaceFolder}/build/blue-f030/blue-f030.svd",
       "configFiles": [
         "${workspaceRoot}/build/blue-f030/openocd.cfg"
       ],
@@ -24,7 +37,7 @@
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
-      "svdFile": "${workspaceFolder}/svd/stm32f0x1.svd",
+      "svdFile": "${workspaceFolder}/build/blue-f051/blue-f051.svd",
       "configFiles": [
         "${workspaceRoot}/build/blue-f051/openocd.cfg"
       ],
@@ -37,7 +50,7 @@
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
-      "svdFile": "${workspaceFolder}/svd/stm32f103.svd",
+      "svdFile": "${workspaceFolder}/build/blue-pill/blue-pill.svd",
       "configFiles": [
         "${workspaceRoot}/build/blue-pill/openocd.cfg"
       ],
@@ -50,7 +63,7 @@
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
-      "svdFile": "${workspaceFolder}/svd/stm32g031.svd",
+      "svdFile": "${workspaceFolder}/build/nucleo-g031k8/nucleo-g031k8.svd",
       "configFiles": [
         "${workspaceRoot}/build/nucleo-g031k8/openocd.cfg"
       ],
@@ -63,7 +76,7 @@
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
-      "svdFile": "${workspaceFolder}/svd/stm32g07x.svd",
+      "svdFile": "${workspaceFolder}/build/nucleo-g070rb/nucleo-g070rb.svd",
       "configFiles": [
         "${workspaceRoot}/build/nucleo-g070rb/openocd.cfg"
       ],
@@ -76,7 +89,7 @@
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
-      "svdFile": "${workspaceFolder}/svd/stm32f303.svd",
+      "svdFile": "${workspaceFolder}/build/stm32f3-discovery/stm32f3-discovery.svd",
       "configFiles": [
         "${workspaceRoot}/build/stm32f3-discovery/openocd.cfg"
       ],
@@ -89,7 +102,7 @@
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
-      "svdFile": "${workspaceFolder}/svd/stm32f100.svd",
+      "svdFile": "${workspaceFolder}/build/stm32vl-discovery/stm32vl-discovery.svd",
       "configFiles": [
         "${workspaceRoot}/build/stm32vl-discovery/openocd.cfg"
       ],
