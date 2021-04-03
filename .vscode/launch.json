@@ -7,7 +7,7 @@
     {
       "name": "blue-f030",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/blue-f030/tiny.elf",
+      "executable": "${workspaceFolder}/build/blue-f030/blue-f030.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
@@ -20,7 +20,7 @@
     {
       "name": "blue-f051",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/blue-f051/tiny.elf",
+      "executable": "${workspaceFolder}/build/blue-f051/blue-f051.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
@@ -33,7 +33,7 @@
     {
       "name": "blue-pill",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/blue-pill/tiny.elf",
+      "executable": "${workspaceFolder}/build/blue-pill/blue-pill.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
@@ -46,7 +46,7 @@
     {
       "name": "nucleo-g031k8",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/nucleo-g031k8/tiny.elf",
+      "executable": "${workspaceFolder}/build/nucleo-g031k8/nucleo-g031k8.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
@@ -59,7 +59,7 @@
     {
       "name": "nucleo-g070rb",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/nucleo-g070rb/tiny.elf",
+      "executable": "${workspaceFolder}/build/nucleo-g070rb/nucleo-g070rb.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
@@ -72,7 +72,7 @@
     {
       "name": "stm32f3-discovery",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/stm32f3-discovery/tiny.elf",
+      "executable": "${workspaceFolder}/build/stm32f3-discovery/stm32f3-discovery.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
@@ -85,7 +85,7 @@
     {
       "name": "stm32vl-discovery",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/stm32vl-discovery/tiny.elf",
+      "executable": "${workspaceFolder}/build/stm32vl-discovery/stm32vl-discovery.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",

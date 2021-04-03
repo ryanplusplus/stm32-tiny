@@ -6,7 +6,8 @@
 #include "watchdog.h"
 #include "micro.h"
 
-void watchdog_init(void) {
+void watchdog_init(void)
+{
   LL_IWDG_EnableWriteAccess(IWDG);
   {
     // Watchdog tick rate = 32 KHz / 32 = 1 msec
@@ -21,6 +22,7 @@ void watchdog_init(void) {
   LL_IWDG_Enable(IWDG);
 }
 
-void watchdog_kick(void) {
+void watchdog_kick(void)
+{
   LL_IWDG_ReloadCounter(IWDG);
 }

@@ -1,29 +1,40 @@
-TARGET = tiny
-BUILD_DIR ?= ./build/nucleo-g031k8
+TARGET = $(subst .mk,,$(firstword $(MAKEFILE_LIST)))
+BUILD_DIR ?= ./build/$(TARGET)
 
 CPU := cortex-m0plus
 ARCH := armv6-m
-OPENOCD_CFG := openocd/nucleo-g031k8
-LINKER_CFG := ld/nucleo-g031k8.ld
+LINKER_CFG := ld/$(TARGET).ld
+
+DEBUG_ADAPTER ?= openocd
+OPENOCD_CFG_DIR := openocd/$(TARGET)
+BLACK_MAGIC_PORT ?= /dev/ttyACM0
+BLACK_MAGIC_POWER_TARGET ?= N
 
 DEFINES := \
   STM32G031xx \
 
+include tools/defaults.mk
+
+CPPFLAGS += \
+  -Wno-unused-parameter \
+
 SRC_DIRS := \
-  src/target/nucleo-g031k8 \
-
-LIB_FILES := \
-  lib/stm32cube/CMSIS/STM32G0xx/src/system_stm32g0xx.c \
-
-LIB_DIRS := \
-  lib/tiny/src \
   src/peripheral/cmsis \
   src/peripheral/stm32xxxx \
+  src/target/$(TARGET) \
+
+SRC_FILES := \
+  lib/stm32cube/CMSIS/STM32G0xx/src/system_stm32g0xx.c \
 
 INC_DIRS := \
   lib/stm32cube/CMSIS/ARM/inc \
   lib/stm32cube/CMSIS/STM32G0xx/inc \
   lib/stm32cube/HAL/STM32G0xx/inc \
-  lib/tiny/include \
 
-include makefile-worker.mk
+include lib_tiny.mk
+
+include tools/tools.mk
+
+.PHONY: watch
+watch:
+	@rerun "$(MAKE) --no-print-directory -f $(firstword $(MAKEFILE_LIST))"

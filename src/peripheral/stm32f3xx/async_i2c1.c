@@ -21,7 +21,8 @@ static struct {
 static uint8_t buffer_index;
 static uint8_t buffer_size;
 
-static void initialize_peripheral(void) {
+static void initialize_peripheral(void)
+{
   LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_I2C1);
   LL_RCC_SetI2CClockSource(LL_RCC_I2C1_CLKSOURCE_SYSCLK);
 
@@ -61,7 +62,8 @@ static void write(
   const uint8_t* _buffer,
   uint16_t _buffer_size,
   tiny_async_i2c_callback_t _callback,
-  void* _context) {
+  void* _context)
+{
   (void)self;
 
   callback = _callback;
@@ -86,7 +88,8 @@ static void read(
   uint8_t* _buffer,
   uint16_t _buffer_size,
   tiny_async_i2c_callback_t _callback,
-  void* _context) {
+  void* _context)
+{
   (void)self;
 
   callback = _callback;
@@ -104,14 +107,16 @@ static void read(
     LL_I2C_GENERATE_START_READ);
 }
 
-static void reset(i_tiny_async_i2c_t* self) {
+static void reset(i_tiny_async_i2c_t* self)
+{
   (void)self;
   initialize_peripheral();
 }
 
 static const i_tiny_async_i2c_api_t api = { write, read, reset };
 
-void I2C1_EV_IRQHandler(void) {
+void I2C1_EV_IRQHandler(void)
+{
   if(LL_I2C_IsActiveFlag_RXNE(I2C1)) {
     buffer.read[buffer_index++] = LL_I2C_ReceiveData8(I2C1);
   }
@@ -131,12 +136,14 @@ void I2C1_EV_IRQHandler(void) {
   }
 }
 
-void I2C1_ER_IRQHandler(void) {
+void I2C1_ER_IRQHandler(void)
+{
   reset(NULL);
   callback(context, false);
 }
 
-i_tiny_async_i2c_t* async_i2c1_init(void) {
+i_tiny_async_i2c_t* async_i2c1_init(void)
+{
   initialize_peripheral();
   instance.api = &api;
   return &instance;
