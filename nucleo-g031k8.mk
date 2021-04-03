@@ -10,7 +10,7 @@ DEFINES := \
   STM32G031xx \
 
 SRC_DIRS := \
-  src/app/nucleo-g031k8 \
+  src/target/nucleo-g031k8 \
 
 LIB_FILES := \
   lib/stm32cube/CMSIS/STM32G0xx/src/system_stm32g0xx.c \

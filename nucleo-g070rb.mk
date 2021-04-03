@@ -10,7 +10,7 @@ DEFINES := \
   STM32G070xx \
 
 SRC_DIRS := \
-  src/app/nucleo-g070rb \
+  src/target/nucleo-g070rb \
 
 LIB_FILES := \
   lib/stm32cube/CMSIS/STM32G0xx/src/system_stm32g0xx.c \

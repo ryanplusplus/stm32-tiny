@@ -11,7 +11,7 @@ DEFINES := \
   HSE_VALUE=8000000 \
 
 SRC_DIRS := \
-  src/app/blue-pill \
+  src/target/blue-pill \
 
 LIB_FILES := \
   lib/stm32cube/CMSIS/STM32F1xx/src/system_stm32f1xx.c \

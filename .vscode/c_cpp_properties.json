@@ -12,7 +12,7 @@
         "${workspaceFolder}/lib/stm32cube/HAL/STM32F0xx/inc",
         "${workspaceFolder}/lib/tiny/include",
         "${workspaceFolder}/lib/tiny/src",
-        "${workspaceFolder}/src/app/blue-f030",
+        "${workspaceFolder}/src/target/blue-f030",
         "${workspaceFolder}/src/peripheral/cmsis",
         "${workspaceFolder}/src/peripheral/stm32xxxx"
       ],
@@ -32,7 +32,7 @@
         "${workspaceFolder}/lib/stm32cube/HAL/STM32F0xx/inc",
         "${workspaceFolder}/lib/tiny/include",
         "${workspaceFolder}/lib/tiny/src",
-        "${workspaceFolder}/src/app/blue-f051",
+        "${workspaceFolder}/src/target/blue-f051",
         "${workspaceFolder}/src/peripheral/cmsis",
         "${workspaceFolder}/src/peripheral/stm32xxxx"
       ],

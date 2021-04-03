@@ -11,7 +11,7 @@ DEFINES := \
   HSE_VALUE=8000000 \
 
 SRC_DIRS := \
-  src/app/blue-f030 \
+  src/target/blue-f030 \
 
 LIB_FILES := \
   lib/stm32cube/CMSIS/STM32F0xx/src/system_stm32f0xx.c \

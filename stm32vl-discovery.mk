@@ -11,7 +11,7 @@ DEFINES := \
   HSE_VALUE=8000000 \
 
 SRC_DIRS := \
-  src/app/stm32vl-discovery \
+  src/target/stm32vl-discovery \
 
 LIB_FILES := \
   lib/stm32cube/CMSIS/STM32F1xx/src/system_stm32f1xx.c \
