@@ -57,6 +57,19 @@
       "preLaunchTask": "blue-pill-debug-deps"
     },
     {
+      "name": "blue-pill-plus",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/blue-pill-plus/blue-pill-plus.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "svdFile": "${workspaceFolder}/build/blue-pill-plus/blue-pill-plus.svd",
+      "configFiles": [
+        "${workspaceRoot}/build/blue-pill-plus/openocd.cfg"
+      ],
+      "preLaunchTask": "blue-pill-plus-debug-deps"
+    },
+    {
       "name": "nucleo-g031k8",
       "cwd": "${workspaceRoot}",
       "executable": "${workspaceFolder}/build/nucleo-g031k8/nucleo-g031k8.elf",

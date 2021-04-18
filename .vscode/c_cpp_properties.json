@@ -58,6 +58,44 @@
       "intelliSenseMode": "gcc-arm",
       "cStandard": "c11",
       "cppStandard": "c++17"
+    },
+    {
+      "name": "blue-pill",
+      "defines": [
+        "STM32F103xB"
+      ],
+      "includePath": [
+        "${workspaceFolder}/lib/stm32cube/CMSIS/ARM/inc",
+        "${workspaceFolder}/lib/stm32cube/CMSIS/STM32F1xx/inc",
+        "${workspaceFolder}/lib/stm32cube/HAL/STM32F1xx/inc",
+        "${workspaceFolder}/lib/tiny/include",
+        "${workspaceFolder}/lib/tiny/src",
+        "${workspaceFolder}/src/target/blue-pill",
+        "${workspaceFolder}/src/peripheral/cmsis",
+        "${workspaceFolder}/src/peripheral/stm32xxxx"
+      ],
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+    {
+      "name": "blue-pill-plus",
+      "defines": [
+        "STM32F103xB"
+      ],
+      "includePath": [
+        "${workspaceFolder}/lib/stm32cube/CMSIS/ARM/inc",
+        "${workspaceFolder}/lib/stm32cube/CMSIS/STM32F1xx/inc",
+        "${workspaceFolder}/lib/stm32cube/HAL/STM32F1xx/inc",
+        "${workspaceFolder}/lib/tiny/include",
+        "${workspaceFolder}/lib/tiny/src",
+        "${workspaceFolder}/src/target/blue-pill",
+        "${workspaceFolder}/src/peripheral/cmsis",
+        "${workspaceFolder}/src/peripheral/stm32xxxx"
+      ],
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
     }
   ],
   "version": 4

@@ -56,6 +56,19 @@
       }
     },
     {
+      "label": "blue-pill-plus-debug-deps",
+      "type": "shell",
+      "command": "make -f blue-pill-plus.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
       "label": "nucleo-g031k8-debug-deps",
       "type": "shell",
       "command": "make -f nucleo-g031k8.mk debug-deps",
