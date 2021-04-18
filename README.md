@@ -14,6 +14,9 @@ https://stm32-base.org/boards/STM32F051C8T6-LC-Technology
 ### Blue Pill
 https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill
 
+### Blue Pill Plus
+https://stm32-base.org/boards/STM32F103C8T6-WeAct-Blue-Pill-Plus-Clone.html
+
 ### NUCLEO-G031K8
 https://www.st.com/en/evaluation-tools/nucleo-g031k8.html
 
