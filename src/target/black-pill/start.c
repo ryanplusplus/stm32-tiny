@@ -106,7 +106,7 @@ void SPI4_IRQHandler(void) __attribute__((weak, alias("default_handler")));
 
 typedef void (*vector_t)(void);
 
-const vector_t vector_table[] __attribute__((section(".vectors"))) = {
+const vector_t vector_table[] __attribute__((section(".vectors"), used)) = {
   // Cortex-M3
   (vector_t)&_stack_top,
   reset_handler,
