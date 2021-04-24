@@ -19,6 +19,8 @@ include tools/defaults.mk
 
 CPPFLAGS += \
   -Wno-unused-parameter \
+  -flto \
+  -fwhole-program \
 
 SRC_DIRS := \
   src/peripheral/cmsis \
