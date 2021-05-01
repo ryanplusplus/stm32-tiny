@@ -10,12 +10,13 @@
 void clock_init(void)
 {
   LL_FLASH_EnablePrefetch();
+  LL_FLASH_SetLatency(LL_FLASH_LATENCY_2);
 
   LL_RCC_HSE_Enable();
   while(!LL_RCC_HSE_IsReady()) {
   };
 
-  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE_DIV_2, LL_RCC_PLL_MUL_6);
+  LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE_DIV_1, LL_RCC_PLL_MUL_9);
   LL_RCC_PLL_Enable();
   while(!LL_RCC_PLL_IsReady()) {
   };

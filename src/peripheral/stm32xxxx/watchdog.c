@@ -6,7 +6,16 @@
 #include "watchdog.h"
 #include "micro.h"
 
-void watchdog_init(void)
+static tiny_timer_t timer;
+
+static void kick(tiny_timer_group_t* _timer_group, void* context)
+{
+  (void)context;
+  (void)_timer_group;
+  LL_IWDG_ReloadCounter(IWDG);
+}
+
+void watchdog_init(tiny_timer_group_t* timer_group)
 {
   LL_IWDG_EnableWriteAccess(IWDG);
   {
@@ -20,9 +29,6 @@ void watchdog_init(void)
 
   LL_IWDG_ReloadCounter(IWDG);
   LL_IWDG_Enable(IWDG);
-}
 
-void watchdog_kick(void)
-{
-  LL_IWDG_ReloadCounter(IWDG);
+  tiny_timer_start_periodic(timer_group, &timer, 500, kick, NULL);
 }
