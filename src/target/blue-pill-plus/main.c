@@ -25,7 +25,7 @@ int main(void)
   __enable_irq();
 
   while(1) {
-    tiny_timer_group_run(&timer_group);
+    systick_skip(tiny_timer_group_run(&timer_group));
     __WFI();
   }
 }
