@@ -2,7 +2,6 @@ TARGET = $(subst .mk,,$(firstword $(MAKEFILE_LIST)))
 BUILD_DIR ?= ./build/$(TARGET)
 
 CPU := cortex-m0plus
-ARCH := armv6-m
 LINKER_CFG := ld/$(TARGET).ld
 SVD := svd/stm32f103.svd
 
