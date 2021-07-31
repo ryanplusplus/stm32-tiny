@@ -30,5 +30,5 @@ void watchdog_init(tiny_timer_group_t* timer_group)
   LL_IWDG_ReloadCounter(IWDG);
   LL_IWDG_Enable(IWDG);
 
-  tiny_timer_start_periodic(timer_group, &timer, 500, kick, NULL);
+  tiny_timer_start_periodic(timer_group, &timer, 500, NULL, kick);
 }
