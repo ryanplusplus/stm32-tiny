@@ -2,7 +2,7 @@ TARGET = $(subst .mk,,$(firstword $(MAKEFILE_LIST)))
 BUILD_DIR ?= ./build/$(TARGET)
 
 CPU := cortex-m0
-LINKER_CFG := ld/$(TARGET).ld
+LINKER_SCRIPT := ld/$(TARGET).ld
 SVD := svd/stm32f0x1.svd
 
 DEBUG_ADAPTER ?= openocd
