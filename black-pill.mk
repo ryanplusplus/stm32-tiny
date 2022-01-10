@@ -33,7 +33,7 @@ INC_DIRS := \
   lib/stm32cube/CMSIS/STM32F4xx/inc \
   lib/stm32cube/HAL/STM32F4xx/inc \
 
-include lib_tiny.mk
+include lib/tiny/lib_tiny.mk
 
 include tools/tools.mk
 

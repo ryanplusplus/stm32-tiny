@@ -34,7 +34,7 @@ INC_DIRS := \
   lib/stm32cube/HAL/STM32G0xx/inc \
   lib/tiny/include \
 
-include lib_tiny.mk
+include lib/tiny/lib_tiny.mk
 
 include tools/tools.mk
 
