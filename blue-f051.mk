@@ -1,3 +1,5 @@
+include tools/setup.mk
+
 TARGET = $(subst .mk,,$(firstword $(MAKEFILE_LIST)))
 BUILD_DIR ?= ./build/$(TARGET)
 
