@@ -6,7 +6,7 @@
     {
       "label": "black-pill-debug-deps",
       "type": "shell",
-      "command": "make -f black-pill.mk debug-deps",
+      "command": "make -j16 -f black-pill.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
@@ -19,7 +19,7 @@
     {
       "label": "blue-f030-debug-deps",
       "type": "shell",
-      "command": "make -f blue-f030.mk debug-deps",
+      "command": "make -j16 -f blue-f030.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
@@ -32,7 +32,7 @@
     {
       "label": "blue-f051-debug-deps",
       "type": "shell",
-      "command": "make -f blue-f051.mk debug-deps",
+      "command": "make -j16 -f blue-f051.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
@@ -45,7 +45,7 @@
     {
       "label": "blue-pill-debug-deps",
       "type": "shell",
-      "command": "make -f blue-pill.mk debug-deps",
+      "command": "make -j16 -f blue-pill.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
@@ -58,7 +58,7 @@
     {
       "label": "blue-pill-plus-debug-deps",
       "type": "shell",
-      "command": "make -f blue-pill-plus.mk debug-deps",
+      "command": "make -j16 -f blue-pill-plus.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
@@ -71,7 +71,7 @@
     {
       "label": "nucleo-g031k8-debug-deps",
       "type": "shell",
-      "command": "make -f nucleo-g031k8.mk debug-deps",
+      "command": "make -j16 -f nucleo-g031k8.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
@@ -84,7 +84,7 @@
     {
       "label": "nucleo-g070rb-debug-deps",
       "type": "shell",
-      "command": "make -f nucleo-g070rb.mk debug-deps",
+      "command": "make -j16 -f nucleo-g070rb.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
@@ -97,7 +97,7 @@
     {
       "label": "stm32f3-discovery-debug-deps",
       "type": "shell",
-      "command": "make -f stm32f3-discovery.mk debug-deps",
+      "command": "make -j16 -f stm32f3-discovery.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
@@ -110,7 +110,7 @@
     {
       "label": "stm32vl-discovery-debug-deps",
       "type": "shell",
-      "command": "make -f stm32vl-discovery.mk debug-deps",
+      "command": "make -j16 -f stm32vl-discovery.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",
