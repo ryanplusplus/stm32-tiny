@@ -38,8 +38,6 @@ INC_DIRS := \
 
 include lib/tiny/lib_tiny.mk
 
-include lib/tiny/lib_tiny.mk
-
 .PHONY: all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex
 	@$(SIZE) $<

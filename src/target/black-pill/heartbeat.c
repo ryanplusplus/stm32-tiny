@@ -17,11 +17,10 @@ static struct {
   tiny_timer_t timer;
 } self;
 
-static void blink(tiny_timer_group_t* group, void* context)
+static void blink(void* context)
 {
   (void)context;
   LL_GPIO_TogglePin(GPIOC, LL_GPIO_PIN_13);
-  tiny_timer_start(group, &self.timer, half_period_in_msec, NULL, blink);
 }
 
 void heartbeat_init(tiny_timer_group_t* timer_group)
@@ -32,5 +31,5 @@ void heartbeat_init(tiny_timer_group_t* timer_group)
   LL_GPIO_SetPinOutputType(GPIOC, LL_GPIO_PIN_13, LL_GPIO_OUTPUT_PUSHPULL);
   LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_13, LL_GPIO_MODE_OUTPUT);
 
-  tiny_timer_start(timer_group, &self.timer, half_period_in_msec, NULL, blink);
+  tiny_timer_start_periodic(timer_group, &self.timer, half_period_in_msec, NULL, blink);
 }
