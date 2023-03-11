@@ -1,6 +1,25 @@
 {
   "configurations": [
     {
+      "name": "black-g030",
+      "defines": [
+        "STM32G030xx"
+      ],
+      "includePath": [
+        "${workspaceFolder}/lib/stm32cube/CMSIS/ARM/inc",
+        "${workspaceFolder}/lib/stm32cube/CMSIS/STM32G0xx/inc",
+        "${workspaceFolder}/lib/stm32cube/HAL/STM32G0xx/inc",
+        "${workspaceFolder}/lib/tiny/include",
+        "${workspaceFolder}/lib/tiny/src",
+        "${workspaceFolder}/src/target/black-g030",
+        "${workspaceFolder}/src/peripheral/cmsis",
+        "${workspaceFolder}/src/peripheral/stm32xxxx"
+      ],
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+    {
       "name": "black-pill",
       "defines": [
         "STM32F401xE"
@@ -90,6 +109,44 @@
         "${workspaceFolder}/lib/tiny/include",
         "${workspaceFolder}/lib/tiny/src",
         "${workspaceFolder}/src/target/blue-pill",
+        "${workspaceFolder}/src/peripheral/cmsis",
+        "${workspaceFolder}/src/peripheral/stm32xxxx"
+      ],
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+    {
+      "name": "nucleo-g031k8",
+      "defines": [
+        "STM32G031xx"
+      ],
+      "includePath": [
+        "${workspaceFolder}/lib/stm32cube/CMSIS/ARM/inc",
+        "${workspaceFolder}/lib/stm32cube/CMSIS/STM32G0xx/inc",
+        "${workspaceFolder}/lib/stm32cube/HAL/STM32G0xx/inc",
+        "${workspaceFolder}/lib/tiny/include",
+        "${workspaceFolder}/lib/tiny/src",
+        "${workspaceFolder}/src/target/nucleo-g031k8",
+        "${workspaceFolder}/src/peripheral/cmsis",
+        "${workspaceFolder}/src/peripheral/stm32xxxx"
+      ],
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+    {
+      "name": "nucleo-g070rb",
+      "defines": [
+        "STM32G070xx"
+      ],
+      "includePath": [
+        "${workspaceFolder}/lib/stm32cube/CMSIS/ARM/inc",
+        "${workspaceFolder}/lib/stm32cube/CMSIS/STM32G0xx/inc",
+        "${workspaceFolder}/lib/stm32cube/HAL/STM32G0xx/inc",
+        "${workspaceFolder}/lib/tiny/include",
+        "${workspaceFolder}/lib/tiny/src",
+        "${workspaceFolder}/src/target/nucleo-g070rb",
         "${workspaceFolder}/src/peripheral/cmsis",
         "${workspaceFolder}/src/peripheral/stm32xxxx"
       ],

@@ -5,6 +5,19 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "black-g030",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/black-g030/black-g030.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "svdFile": "${workspaceFolder}/build/black-g030/black-g030.svd",
+      "configFiles": [
+        "${workspaceRoot}/build/black-g030/openocd.cfg"
+      ],
+      "preLaunchTask": "black-g030-debug-deps"
+    },
+    {
       "name": "black-pill",
       "cwd": "${workspaceRoot}",
       "executable": "${workspaceFolder}/build/black-pill/black-pill.elf",

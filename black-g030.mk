@@ -5,7 +5,7 @@ BUILD_DIR ?= ./build/$(TARGET)
 
 CPU := cortex-m0plus
 LINKER_SCRIPT := ld/$(TARGET).ld
-SVD := svd/stm32g031.svd
+SVD := svd/stm32g030.svd
 
 DEBUG_ADAPTER ?= openocd
 OPENOCD_CFG_DIR := openocd/$(TARGET)
@@ -13,7 +13,7 @@ BLACK_MAGIC_PORT ?= /dev/ttyACM0
 BLACK_MAGIC_POWER_TARGET ?= N
 
 DEFINES := \
-  STM32G031xx \
+  STM32G030xx \
 
 include tools/defaults.mk
 

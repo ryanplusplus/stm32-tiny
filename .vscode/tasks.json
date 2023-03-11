@@ -4,6 +4,19 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "black-g030-debug-deps",
+      "type": "shell",
+      "command": "make -j16 -f black-g030.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
       "label": "black-pill-debug-deps",
       "type": "shell",
       "command": "make -j16 -f black-pill.mk debug-deps",
