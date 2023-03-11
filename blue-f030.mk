@@ -7,7 +7,7 @@ CPU := cortex-m0
 LINKER_SCRIPT := ld/$(TARGET).ld
 SVD := svd/stm32f0x0.svd
 
-DEBUG_ADAPTER ?= other
+DEBUG_ADAPTER ?= openocd
 OPENOCD_CFG_DIR := openocd/$(TARGET)
 BLACK_MAGIC_PORT ?= /dev/ttyACM0
 BLACK_MAGIC_POWER_TARGET ?= N
